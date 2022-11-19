@@ -1,0 +1,39 @@
+{
+  "name": "my-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/Dashboard.js",
+  "type": "module",
+  "scripts": {
+    "build": "./esbuild.config.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.15.14",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "rules": {
+      "no-unused-vars": "off"
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true
+    },
+    "globals": {
+      "React": "writable"
+    },
+    "plugins": [
+      "react"
+    ]
+  }
+}
