@@ -1,11 +1,14 @@
 {
-  "name": "my-component",
-  "version": "1.0.0",
+  "name": "cp-header-component",
+  "version": "0.0.1",
   "description": "",
-  "main": "dist/Dashboard.js",
+  "main": "dist/Header.js",
   "type": "module",
+  "engines": {
+    "node": ">=16.18.1"
+  },
   "scripts": {
-    "build": "./esbuild.config.cjs"
+    "build": "node ./esbuild.config.js"
   },
   "keywords": [],
   "author": "",
@@ -19,21 +22,6 @@
     "react-dom": "^18.2.0"
   },
   "eslintConfig": {
-    "extends": "standard",
-    "parser": "babel-eslint",
-    "rules": {
-      "no-unused-vars": "off"
-    },
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest": true
-    },
-    "globals": {
-      "React": "writable"
-    },
-    "plugins": [
-      "react"
-    ]
+    "extends": "standard"
   }
 }
