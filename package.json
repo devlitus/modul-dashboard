@@ -10,8 +10,11 @@
   "scripts": {
     "build": "node ./esbuild.config.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "component",
+    "header"
+  ],
+  "author": "Carles Pedrero",
   "license": "ISC",
   "devDependencies": {
     "esbuild": "^0.15.14",
@@ -22,6 +25,14 @@
     "react-dom": "^18.2.0"
   },
   "eslintConfig": {
-    "extends": "standard"
-  }
+    "extends": "standard",
+    "ignorePatterns": [
+      "dist/"
+    ]
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions"
+  ]
 }

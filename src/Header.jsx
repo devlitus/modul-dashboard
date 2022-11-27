@@ -1,6 +1,7 @@
 import './Header.css'
-export const Header = ({ children }) => {
+export const Header = ({ children, className }) => {
+  const style = className ? `header ${className}` : 'header'
   return (
-    <header className='header'>{ children }</header>
+    <header className={style}>{ children }</header>
   )
 }

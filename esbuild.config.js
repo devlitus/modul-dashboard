@@ -1,4 +1,5 @@
 import { buildSync } from 'esbuild'
+
 buildSync({
   logLevel: 'info',
   entryPoints: ['src/Header.jsx'],
@@ -7,5 +8,10 @@ buildSync({
   minify: true,
   format: 'esm',
   jsx: 'automatic',
-  outdir: 'dist'
+  outdir: 'dist',
+  sourcemap: true,
+  color: true,
+  outExtension: { '.css': '.css' },
+  target: ['es2020', 'chrome58', 'firefox57', 'safari11']
+
 })
